@@ -26,7 +26,7 @@ mark, rp, rt, ruby, summary, time {
 body {
 	background:url(../images/bg_img.jpg) top center no-repeat #000;
 	border:0;
-	font:13px Arial, Helvetica, sans-serif;
+	font:13px Arial;
 	color:#3a3a3a;
 	line-height:20px;
 	min-width:980px;
@@ -588,7 +588,7 @@ footer a:hover {
 }
 .jqTransformSelectWrapper div {
 	float:left;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	display:block;
 	position:relative;
@@ -619,7 +619,7 @@ a.jqTransformSelectOpen {
 	left:0px;
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	display:none;
 	z-index:10;
 	padding:5px 0 2px 0;
@@ -673,7 +673,7 @@ a.jqTransformSelectOpen {
 #form_1 .input, #form_1 .input1, #form_1 .input2 {
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -713,7 +713,7 @@ a.jqTransformSelectOpen {
 #form_2 .input, #form_2 .input1, #form_2 .input2 {
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -769,7 +769,7 @@ a.jqTransformSelectOpen {
 #form_3 .input, #form_3 .input1, #form_3 .input2 {
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -833,7 +833,7 @@ a.jqTransformSelectOpen {
 #form_4 .input, #form_4 .input1, #form_4 .input2 {
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -884,7 +884,7 @@ a.jqTransformSelectOpen {
 .form_5 .input, .form_5 .input1, .form_5 .input2 {
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -1052,7 +1052,7 @@ a.jqTransformSelectOpen {
 	width:219px;
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;
@@ -1063,7 +1063,7 @@ a.jqTransformSelectOpen {
 	width:479px;
 	background:#fff;
 	border:1px solid #e5e5e5;
-	font:12px Arial, Helvetica, sans-serif;
+	font:12px Arial;
 	color:#7f7f7f;
 	float:left;
 	padding:2px 7px;

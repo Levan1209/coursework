@@ -1,4 +1,4 @@
-<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die(); ?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 
 </section>
@@ -7,15 +7,58 @@
 <footer>
     <div class="wrapper">
         <ul id="icons">
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon1.jpg" alt=""></a></li>
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon2.jpg" alt=""></a></li>
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon3.jpg" alt=""></a></li>
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon4.jpg" alt=""></a></li>
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon5.jpg" alt=""></a></li>
-            <li><a href="#" class="normaltip"><img src="<?=SITE_TEMPLATE_PATH;?>/images/icon6.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/icon1.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/icon4.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/icon5.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="<?= SITE_TEMPLATE_PATH; ?>/images/vk_logo.png" alt=""></a></li>
         </ul>
-        <div class="links">Copyright &copy; <?echo date("Y")?> <a href="#">Турфирма глобус</a> All Rights Reserved<br>
-            Design by <a target="_blank" href="#">Levan Goshadze</a></div>
+        <div class="links">Copyright &copy; <? echo date("Y") ?> <a href="#">
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "COMPONENT_TEMPLATE" => ".default",
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/company_name.php"
+                    )
+                ); ?>
+            </a>
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/rights_reserved.php"
+                )
+            ); ?>
+            <br>
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/design.php"
+                )
+            ); ?> <a target="_blank" href="#">
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "COMPONENT_TEMPLATE" => ".default",
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => SITE_TEMPLATE_PATH . "/include_areas/" . LANGUAGE_ID . "/creator.php"
+                    )
+                ); ?></a></div>
     </div>
 </footer>
 <!--footer end-->
@@ -48,9 +91,12 @@
             pauseOnHover: true, //Stop animation while hovering
             manualAdvance: false, //Force manual transitions
             captionOpacity: 1, //Universal caption opacity
-            beforeChange: function () {},
-            afterChange: function () {},
-            slideshowEnd: function () {} //Triggers after all slides have been shown
+            beforeChange: function () {
+            },
+            afterChange: function () {
+            },
+            slideshowEnd: function () {
+            } //Triggers after all slides have been shown
         });
     });
 </script>
